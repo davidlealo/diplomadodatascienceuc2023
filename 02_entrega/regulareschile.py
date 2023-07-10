@@ -1,4 +1,4 @@
-def desertores(df_anterior, df_posterior):
+def regulares(df_anterior, df_posterior):
     # Filtrar los estudiantes que no son prebásica o de educación para adultos
     desertores = df_anterior[(~df_anterior['COD_ENSE2'].isin([1, 3, 4, 6, 8]))]
     # print("Estudiantes regulares sin prebasica y adultos año anterior",desertores.shape)
