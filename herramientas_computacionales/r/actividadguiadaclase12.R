@@ -38,3 +38,24 @@ media_valores <- df %>%
 
 print(media_valores)
 
+# 5. Genere una nueva variable que clasifique 
+# la cantidad de habitaciones según tabla
+# 2 o menos  = pocas_hab
+# 3 a 5 (incluidos) = varias_hab
+# 6 o más = muchas_hab
+
+pocas_hab <- df %>% 
+  mutate(pocas_hab = case_when(N_Habitaciones < 2 ~ "Pocas Habitaciones",
+                               TRUE ~ FALSE)) %>% 
+  arrange(pocas_hab)
+
+print(pocas_hab)
+
+varias_hab <- df %>%
+  mutate(varias_hab = case_when(
+    N_Habitaciones >= 3 & N_Habitaciones <= 5 ~ "Varias Habitaciones",
+    TRUE ~ FALSE
+  )) %>%
+  arrange(varias_hab)
+
+print(varias_hab)
