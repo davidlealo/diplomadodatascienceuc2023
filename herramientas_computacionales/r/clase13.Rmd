@@ -1,0 +1,36 @@
+---
+title: "Actividad guiada clase 13"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*.
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```         
+Actividad guiada
+Ahora realice:
+1. Cambie el nombre de la variable Quien_Vende por Vendedor.
+2. Ordene la base de datos según la cantidad de baños y luego entregue la información
+de las primeras diez viviendas.
+3. Agrupe la base según la cantidad de estacionamientos e indique la cantidad de
+viviendas para cada grupo.
+4. Calcule la media de los valores en UF y en CLP usando dplyr.
+5. Genere una nueva variable que clasifique la cantidad de habitaciones según la
+siguiente tabla:
+Cantidad de Habitaciones Categoría
+2 o menos pocas_hab
+3 a 5 (incluidos) varias_hab
+6 o más muchas_hab
+6. Cree una nueva variable que contenga la superficie sin construir
+```
