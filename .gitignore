@@ -132,3 +132,4 @@ dist
 # Videos clases
 videos/
 .Rproj.user
+.DS_Store
